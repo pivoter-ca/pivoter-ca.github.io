@@ -650,31 +650,33 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
 
 #app { min-height: 100vh; display: flex; flex-direction: column; }
 
-#hero { background-image: url("/assets/img/puzzle_r.jpg"); background-size: cover; background-position: center center; height: 85vh; max-height: 80vw; min-height: 360px; text-align: center; }
+#hero { background-image: url("/assets/img/crowd-arrow_sample.jpg"); background-size: cover; background-position: center center; height: 80vh; max-height: 75vw; min-height: 360px; text-align: center; position: relative; }
+
+#hero:after { content: ""; position: absolute; bottom: 0; left: 0; right: 0; height: 4em; background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, white 100%); }
 
 #hero .container { height: 100%; }
 
 #hero--inner { display: flex; flex-direction: column; height: calc(100% - 2em); justify-content: space-between; }
 
-#hero--title { width: 100%; margin-left: auto; margin-right: auto; padding: 0.5em 1em 1em; margin-top: 3em; text-shadow: -1px 1px #fff; }
+#hero--title { background-color: rgba(255, 255, 255, 0.6); width: 100%; margin-left: auto; margin-right: auto; padding: 0.25em 1em 0.75em; text-shadow: -1px 1px #fff; }
 
 @media (min-width: 48em) { #hero--title { width: 75%; } }
+
+@media (min-width: 30em) { #hero--title { background: radial-gradient(circle farthest-side, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)); } }
 
 #site-title { margin: 0; }
 
 #site-logo { margin: 0 auto; max-width: 8em; }
 
-#site-subtitle { font-size: 1em; font-family: "Hco Gotham Narrow", Helvetica, -apple-system, BlinkMacSystemFont, Arial, sans-serif; margin: 0; }
+#site-subtitle { font-size: 1em; font-family: "Hco Gotham Narrow", Helvetica, -apple-system, BlinkMacSystemFont, Arial, sans-serif; margin: 0; font-weight: bold; }
 
-#site-byline { padding: 0.5em; height: 2rem; vertical-align: middle; margin: 0 auto; color: #fff; font-size: 1em; font-family: "Hco Gotham Narrow", Helvetica, -apple-system, BlinkMacSystemFont, Arial, sans-serif; font-weight: 300; margin-bottom: 1rem; width: 75%; }
+#site-byline { padding: 0.5em; height: 2rem; vertical-align: middle; margin: 1.5em auto 0; color: #6B7587; font-size: 1em; font-family: "Hco Gotham Narrow", Helvetica, -apple-system, BlinkMacSystemFont, Arial, sans-serif; font-weight: 300; margin-bottom: 1rem; width: 75%; }
 
 #site-byline img { height: 0.8em; padding-bottom: 0.1em; vertical-align: middle; }
 
-#site-byline path { stroke: #fff; }
+.giv3-logo { border-bottom: 1px solid #6B7587; }
 
-.giv3-logo { -webkit-filter: brightness(0) invert(1); filter: brightness(0) invert(1); border-bottom: 1px solid #fff; }
-
-#section--intro h1 { margin-top: -3em; margin-bottom: 2em; font-family: "Hco Gotham", Helvetica, -apple-system, BlinkMacSystemFont, Arial, sans-serif; text-align: center; color: #EFA20E; }
+#section--intro h1 { margin-top: -1em; margin-bottom: 2em; font-family: "Hco Gotham", Helvetica, -apple-system, BlinkMacSystemFont, Arial, sans-serif; text-align: center; color: #EFA20E; }
 
 #section--intro h1 span:last-child { color: #AB1E27; }
 
