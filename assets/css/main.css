@@ -716,7 +716,7 @@ h2.section--header { background-color: #AB1E27; border-radius: 8px; padding: 1.7
 
 #section--library { padding-bottom: 4rem; }
 
-#section--library .row { justify-content: stretch; margin-bottom: 1rem; }
+#section--library .row { margin-bottom: 1rem; }
 
 #section--library .raised-box { height: 100%; margin-bottom: 0; display: flex; flex-direction: column; justify-content: space-between; }
 
@@ -725,6 +725,8 @@ h2.section--header { background-color: #AB1E27; border-radius: 8px; padding: 1.7
 #section--library .raised-box h4 a { text-decoration: none; }
 
 #section--library .raised-box h4 { margin-top: 0; }
+
+.library-container { display: flex; flex-direction: row-reverse; flex-wrap: wrap; justify-content: center; }
 
 #main-footer .container { display: flex; justify-content: space-between; align-items: center; }
 
