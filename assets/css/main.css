@@ -654,9 +654,9 @@ input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focu
 
 #app { min-height: 100vh; display: flex; flex-direction: column; }
 
-#hero { background: url("/assets/img/crowd-arrow_sample.jpg"), linear-gradient(45deg, #ececec 0%, white 100%); background-size: contain; background-repeat: no-repeat; background-position: center center; height: 80vh; max-height: 75vw; min-height: 360px; text-align: center; position: relative; }
+#hero { background: url("/assets/img/crowd-arrow-transparent.svg"), linear-gradient(135deg, #dccdc8 0%, white 100%); background-size: contain; background-repeat: no-repeat; background-position: center center; height: 80vh; max-height: 75vw; min-height: 360px; text-align: center; position: relative; }
 
-#hero:after { content: ""; position: absolute; bottom: 0; left: 0; right: 0; height: 4em; background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, white 100%); }
+#hero:after { content: ""; position: absolute; bottom: 0; left: 0; right: 0; height: 6em; background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, white 100%); }
 
 #hero .container { height: 100%; }
 
